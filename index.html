@@ -8,7 +8,7 @@
   <meta name="keywords" content="HTML CSS JS Dictionary" />
   <meta name="description" content="Simple English Dictionary using HTML CSS JS and Dictionary API." />
   <meta name="author" content="Soham Manjrekar" />
-  <title>Password Generator</title>
+  <title>Currency Conveter</title>
   <link rel="icon" type="image/x-icon" href="/images/logo.png">
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
@@ -79,10 +79,10 @@
           </a>
           <h1>
             Discovering <br>
-            Password Generator
+            Currency Conveter
           </h1>
           <p>
-            Simple Password Generator using HTML CSS JS.
+            Simple Currency Conveter using HTML CSS JS.
           </p>
           <div>
             <a href="contact.html" class="slider-link">
@@ -94,55 +94,156 @@
           <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="images/project/pass1.jpg" alt="" style="height:70vh;">
+                <img src="images/project/cur1.jpg" alt="" style="height:70vh;">
               </div>
               <div class="carousel-item">
-                <img src="images/project/pass2.jpg" alt="" style="height:70vh;">
+                <img src="images/project/cur2.jpg" alt="" style="height:70vh;">
               </div>
               <div class="carousel-item">
-                <img src="images/project/pass3.jpg" alt="" style="height:70vh;">
+                <img src="images/project/cur3.jpg" alt="" style="height:70vh;">
               </div>
             </div>
-
           </div>
-
         </div>
       </div>
     </section>
   </div>
-
   <section class="about_section layout_padding">
-    <h1 class="text-center">Password Generator</h1>
+    <h1 class="text-center">Currency Conveter</h1>
     <div class="container container1">
-      <div class="result-container">
-        <span id="result"></span>
-        <button class="btn" id="clipboard" style="width:10vw;">
-          Copy
-        </button>
+
+      <div class="main">
+        <div class="form-group"> <label for="oamount"> Amount to Convert : </label> <input type="text"
+            class="form-control searchBox" placeholder="0.00" id="oamount"> </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend"> <span class="input-group-text">From</span> </div> <select
+                class="form-control from" id="sel1">
+                <option value="">Select One …</option>
+                <option value="USD">USD</option>
+                <option value="AED">AED</option>
+                <option value="ARS">ARS</option>
+                <option value="AUD">AUD</option>
+                <option value="BGN">BGN</option>
+                <option value="BRL">BRL</option>
+                <option value="BSD">BSD</option>
+                <option value="CAD">CAD</option>
+                <option value="CHF">CHF</option>
+                <option value="CLP">CLP</option>
+                <option value="CNY">CNY</option>
+                <option value="COP">COP</option>
+                <option value="CZK">CZK</option>
+                <option value="DKK">DKK</option>
+                <option value="DOP">DOP</option>
+                <option value="EGP">EGP</option>
+                <option value="EUR">EUR</option>
+                <option value="FJD">FJD</option>
+                <option value="GBP">GBP</option>
+                <option value="GTQ">GTQ</option>
+                <option value="HKD">HKD</option>
+                <option value="HRK">HRK</option>
+                <option value="HUF">HUF</option>
+                <option value="IDR">IDR</option>
+                <option value="ILS">ILS</option>
+                <option value="INR">INR</option>
+                <option value="ISK">ISK</option>
+                <option value="JPY">JPY</option>
+                <option value="KRW">KRW</option>
+                <option value="KZT">KZT</option>
+                <option value="MVR">MVR</option>
+                <option value="MXN">MXN</option>
+                <option value="MYR">MYR</option>
+                <option value="NOK">NOK</option>
+                <option value="NZD">NZD</option>
+                <option value="PAB">PAB</option>
+                <option value="PEN">PEN</option>
+                <option value="PHP">PHP</option>
+                <option value="PKR">PKR</option>
+                <option value="PLN">PLN</option>
+                <option value="PYG">PYG</option>
+                <option value="RON">RON</option>
+                <option value="RUB">RUB</option>
+                <option value="SAR">SAR</option>
+                <option value="SEK">SEK</option>
+                <option value="SGD">SGD</option>
+                <option value="THB">THB</option>
+                <option value="TRY">TRY</option>
+                <option value="TWD">TWD</option>
+                <option value="UAH">UAH</option>
+                <option value="UYU">UYU</option>
+                <option value="ZAR">ZAR</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend"> <span class="input-group-text">To</span> </div> <select
+                class="form-control to" id="sel2">
+                <option value="">Select One …</option>
+                <option value="USD">USD</option>
+                <option value="AED">AED</option>
+                <option value="ARS">ARS</option>
+                <option value="AUD">AUD</option>
+                <option value="BGN">BGN</option>
+                <option value="BRL">BRL</option>
+                <option value="BSD">BSD</option>
+                <option value="CAD">CAD</option>
+                <option value="CHF">CHF</option>
+                <option value="CLP">CLP</option>
+                <option value="CNY">CNY</option>
+                <option value="COP">COP</option>
+                <option value="CZK">CZK</option>
+                <option value="DKK">DKK</option>
+                <option value="DOP">DOP</option>
+                <option value="EGP">EGP</option>
+                <option value="EUR">EUR</option>
+                <option value="FJD">FJD</option>
+                <option value="GBP">GBP</option>
+                <option value="GTQ">GTQ</option>
+                <option value="HKD">HKD</option>
+                <option value="HRK">HRK</option>
+                <option value="HUF">HUF</option>
+                <option value="IDR">IDR</option>
+                <option value="ILS">ILS</option>
+                <option value="INR">INR</option>
+                <option value="ISK">ISK</option>
+                <option value="JPY">JPY</option>
+                <option value="KRW">KRW</option>
+                <option value="KZT">KZT</option>
+                <option value="MVR">MVR</option>
+                <option value="MXN">MXN</option>
+                <option value="MYR">MYR</option>
+                <option value="NOK">NOK</option>
+                <option value="NZD">NZD</option>
+                <option value="PAB">PAB</option>
+                <option value="PEN">PEN</option>
+                <option value="PHP">PHP</option>
+                <option value="PKR">PKR</option>
+                <option value="PLN">PLN</option>
+                <option value="PYG">PYG</option>
+                <option value="RON">RON</option>
+                <option value="RUB">RUB</option>
+                <option value="SAR">SAR</option>
+                <option value="SEK">SEK</option>
+                <option value="SGD">SGD</option>
+                <option value="THB">THB</option>
+                <option value="TRY">TRY</option>
+                <option value="TWD">TWD</option>
+                <option value="UAH">UAH</option>
+                <option value="UYU">UYU</option>
+                <option value="ZAR">ZAR</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="text-center"> <!-- convert button --> <button class="btn btn-primary convert m-2" type="submit">
+            Convert </button> <!-- reset button --> <button class="btn btn-primary m-2" onclick="clearVal()"> Reset
+          </button> </div>
       </div>
-      <div class="settings">
-        <div class="setting">
-          <label for="length">Password Length</label>
-          <input type="number" name="length" id="length" min="4" max="20" value="20" />
-        </div>
-        <div class="setting">
-          <label for="uppercase">Include uppercase letters</label>
-          <input type="checkbox" name="uppercase" id="uppercase" checked />
-        </div>
-        <div class="setting">
-          <label for="lowercase">Include lowercase letters</label>
-          <input type="checkbox" name="lowercase" id="lowercase" checked />
-        </div>
-        <div class="setting">
-          <label for="numbers">Include numbers</label>
-          <input type="checkbox" name="numbers" id="numbers" checked />
-        </div>
-        <div class="setting">
-          <label for="symbols">Include symbols</label>
-          <input type="checkbox" name="symbols" id="symbols" checked />
-        </div>
+      <div id="finalAmount" class="text-center"> <!-- Display the converted amount -->
+        <h2>Converted Amount : <span class="finalValue" style="color:rgb(255, 0, 0);"> </span> </h2>
       </div>
-      <button class="btn btn-large" id="generate">Generate Password</button>
     </div>
   </section>
   <section class="about_section layout_padding">
@@ -155,17 +256,15 @@
             </h6>
             <div class="custom_heading-container">
               <h2>
-                Password Generator
+                Currency Conveter
               </h2>
               <hr>
             </div>
             <p>
-              A simple, secure & clean way to generate random passcodes and passwords 🔑.Using uppercase and lowercase
-              letters, numbers, symbols(sign), you can create your own password with any number of characters you want.
+              A currency converting app that can run online or offline.Get fast and easy calculator for converting one
+              currency to another using the API, click on the link below to access the Currency Converter
             </p>
-            <div>
-
-            </div>
+            <div> </div>
           </div>
         </div>
         <div class="col-md-6">
@@ -232,9 +331,7 @@
                     </button>
                   </div>
                 </div>
-
               </div>
-
             </form>
           </div>
           <div class="col-md-5">
@@ -250,13 +347,9 @@
           </div>
         </div>
       </div>
-      <div class="contact_items">
-
-        <a href="">
+      <div class="contact_items"> <a href="">
           <div class="item ">
-            <div class="img-box box-2">
-
-            </div>
+            <div class="img-box box-2"> </div>
             <div class="detail-box">
               <p>
                 +91 7045208474
@@ -266,9 +359,7 @@
         </a>
         <a href="">
           <div class="item ">
-            <div class="img-box box-3" style="width:10vw;">
-
-            </div>
+            <div class="img-box box-3" style="width:10vw;"> </div>
             <div class="detail-box">
               <p>
                 mrsohammanjrekar@gmail
@@ -322,7 +413,6 @@
   <script type="text/javascript" src="js/index.js"></script>
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
-
 </body>
 </body>
 
