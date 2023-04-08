@@ -1,2 +1,2 @@
-# Currency Converter-Using-HTML-CSS-JS
+# Tip Calculator-Using-HTML-CSS-JS
  
